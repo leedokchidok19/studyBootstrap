@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>모달창</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <ul class="list-unstyled">
+      <li><a href="#modals">모달</a><a href="http://bootstrapk.com/javascript/#modals">이동</a></li>
+      <li><a href="ex16-1.html">모달 예시1</a></li>
+      <li><a href="ex16-2.html">모달 예시2</a></li>
+    </ul>
+
+      <h3 id="modals">모달창</h3>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        모달창 버튼
+      </button>
+
+      <!-- Modal -->
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel" href="">모달창 사용 방법</h4>
+            </div>
+            <div class="modal-body">
+              <h3>data 속성으로(Via data attributes)</h3><br>
+              자바스크립트 없이 모달을 활성화합니다. 버튼같은, 콘트롤러 태그에 data-toggle="modal" 을 추가하고, data-target="#foo" 나 href="#foo" 와 같이 토글할 특정한 모달을 정해주면 됩니다.<br>
+              버튼의 data-target="#myModal"과 모달창의 id="myModal"가 일치해야한다.<br>
+              모달창의 크기 옵션 div.modal-dialog 위치에 modal-lg, modal-sm 옵션을 주면 크고 작은 모달창으로 적용된다.<br>
+              모달창 생성시 애니메이션 제거는 div.modal 위치의 .fade를 제거하면 된다.<br>
+              <h3>자바스크립트로</h3><br>
+              $('#myModal').modal(options);<br>
+              <a href="http://bootstrapk.com/javascript/#modals">더 자세한 사항은 부트스트랩 사이트에서 확인 가능합니다.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
