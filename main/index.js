@@ -16,10 +16,12 @@ $(function(){
     htmlTitle.forEach(function(e, i) {
       let htmlNumber = i+1;
 
-        if(htmlNumber<10) htmlNumber = "0" + htmlNumber;
-
-        let childTag = '<div class="col-xs-12"><a href="./main/ex'+htmlNumber+'.html">'+e+'</a></div>';
-        $('#studyList').append(childTag);
+      if(htmlNumber<10) htmlNumber = "0" + htmlNumber;
+      let childTag = `<tr>
+                        <th scope="row">${i+1}</th>
+                        <td><a class="text-decoration-none" href="./main/ex${htmlNumber}.html" target="_blank">${e}</a></td>
+                      </tr>`;
+      $('#studyList').append(childTag);
 
     });//forEach end
 
