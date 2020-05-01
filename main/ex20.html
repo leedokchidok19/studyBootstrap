@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap예제</title>
+    <title>Affix</title>
 
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -24,14 +24,20 @@
   </head>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid text-center">
 
       <div class="row bg-info text-center">
         <ul class="list-unstyled">
-          <li><a href="https://getbootstrap.com/" id="bootstrap">부트스트랩</a><a href="">이동</a></li>
-          <li><a href="http://bootstrapk.com/" id="bootstrap">부트스트랩 한국어</a><a href="">이동</a></li>
+          <li><a href="#affix">Affix</a><a href="http://bootstrapk.com/javascript/#affix" target="_blank">이동</a></li>
+          <li><a href="ex20-1.html" target="_blank">Affix(data속성을 활용)</a></li>
+          <li><a href="ex20-2.html" target="_blank">Affix(자바스크립트 소스를 활용)</a></li>
         </ul>
       </div><!--row-->
+
+<br>
+<h2 id="affix">Affix affix.js</h2>
+<p>affix 플러그인은 position: sticky; 과 같은 효과를 위해 position: fixed; 를 토글합니다.<br>
+  (부트스트랩의 우측 서브메뉴는 affix 플러그인의 실시간 데모입니다.)</p>
 
     </div><!--container-fluid-->
 

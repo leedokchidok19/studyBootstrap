@@ -9,7 +9,8 @@ $(function(){
                       'button', 'image', '도움이 되는 클래스',
                       '디바이스 크기별로 요소를 보이고 숨기기', '글리피콘, 드랍다운, 네비게이션', '네비게이션 바, 스크롤스파이',
                       '경로(breadcrumbs), 페이지네이션(pagination), 라벨(label), 배지(dadge), 점보트론(jumbotron)', '썸네일, 진행바', '패널, 반응성 임베디 컴포넌트',
-                      '자바스크립트로 동작하는 요소(모달창)'
+                      '자바스크립트로 동작하는 요소(모달창)', '툴팁, 팝오버, 체크박스/라디오', '컬랩스(Collapse), 아코디온(Accordion)',
+                      '캐러셀(Carousel) - 이미지 슬라이드', '메뉴(Affix)'
                     ];
 
     htmlTitle.forEach(function(e, i) {

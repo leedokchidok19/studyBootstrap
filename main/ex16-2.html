@@ -11,9 +11,9 @@
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -80,27 +80,27 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis odio similique modi, nisi itaque quasi accusantium assumenda, rerum cumque praesentium voluptatem obcaecati hic quisquam explicabo quod eaque excepturi adipisci neque non! Eos quam architecto delectus laborum nam! Consequuntur nobis quis vero, ut et aut ducimus atque eum, sint odit!</p>
 
     <script>
-      $(document).ready(function(){
+      $(function(){
        $(".btn-tv").click(function(){
         $("#myModal_tv").modal({
           backdrop:"static",
           keyboard:false
         });
-       })
+      });
        $(".btn-weather").click(function(){
         $("#myModal_weather").modal({
           backdrop:false,
           keyboard:false
         });
-       })
+      });
        $(".weather_close").click(function(){
         $("#myModal_weather").modal("hide");
-       })
+      });
        // 이벤트 추가하기
        $('#myModal_tv').on('hidden.bs.modal', function (e) {
           alert("이벤트에 참여해 주셔서 감사합니다");
-        })
-      })
+        });
+      });
     </script>
 
   </body>
