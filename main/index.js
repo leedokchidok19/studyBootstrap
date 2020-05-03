@@ -2,7 +2,7 @@ $(function(){
   document.cookie = 'cross-site-cookie=bar; SameSite=Lax';
 
   //IIFE
-  (function studyList(){
+  (function studyList(){//bootstrap, template 목록 호출
     let htmlTitle = [
                       '부트스트랩 개념', '디바이스별 크기', 'col-size-number',
                       '레이아웃 실습', 'offset, pull, push', 'table',
@@ -19,12 +19,17 @@ $(function(){
       if(htmlNumber<10) htmlNumber = "0" + htmlNumber;
       let childTag = `<tr>
                         <th scope="row">${i+1}</th>
-                        <td><a class="text-decoration-none" href="./main/ex${htmlNumber}.html" target="_blank">${e}</a></td>
+                        <td><a class="text-decoration-none" href="./main/bootstrap/ex${htmlNumber}.html" target="_blank">${e}</a></td>
                       </tr>`;
       $('#studyList').append(childTag);
-
+      //template 목록 호출
+      templateList();
     });//forEach end
 
   })();// IIFE
 
 });//function end
+
+function templateList(){
+  //template 목록 구현 예정
+}

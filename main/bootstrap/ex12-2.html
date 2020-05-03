@@ -11,9 +11,9 @@
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -32,17 +32,10 @@
       .container-fluid .row p{
         font-size: 2em;
       }
-      #ad{
-       padding-bottom: 100px;
-     }
-     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-         color: #166FA0;
-         background-color: #D0FDFC;
-     }
     </style>
   </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-example">
+  <body data-spy="scroll" data-target=".navbar-example">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-example">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -53,13 +46,13 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img alt="9pixelstudio" src="../resources/image/ex/logo.jpg">
+          <img alt="9pixelstudio" src="../../resources/image/ex/logo.jpg">
         </a>
         <p class="navbar-text"><a href="#" class="navbar-link">9pixelstudio</a>는 최고의 서비스를 제공합니다.</p>
       </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse navbar-scrollspy">
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse navbar-example">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#book">디자인북작업 <span class="sr-only">(current)</span></a></li>
             <li><a href="#video">동영상작업</a></li>
@@ -121,10 +114,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      $('body').scrollspy({ target: '.navbar-scrollspy', offset:70 });
-    </script>
-
   </body>
 </html>

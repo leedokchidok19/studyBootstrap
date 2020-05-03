@@ -26,7 +26,7 @@
         border: 1px solid red;
       }
       #img1{
-        background-image: url(../resources/image/5KimLip.jpg);
+        background-image: url(../../resources/image/loona/5KimLip.jpg);
         /*width: 100%;*/
         height: 650px;/*%가 적용이 안된다. 고정된 값을 준다.*/
         background-size: cover;/*contain : 이미지가 잘리지 않고 다 보이게 해준다.*/
@@ -34,7 +34,7 @@
         background-position: center;/*이미지 가운데 위치*/
       }
       #img2{
-        background-image: url(../resources/image/6ViVi.jpg);
+        background-image: url(../../resources/image/loona/6ViVi.jpg);
         /*width: 100%;*/
         height: 650px;/*%가 적용이 안된다. 고정된 값을 준다.*/
         background-size: cover;/* : contain : 이미지가 잘리지 않고 다 보이게 해준다.*/
@@ -44,20 +44,22 @@
     </style>
   </head>
   <body>
-    <!--div.container>div.row*2>div.col-md-3*4>img[src="../resources/image/loona.jgp"]-->
+    <!--이미지 경로 찾는 법 / : 루트  ./ : 현재 위치    ../ : 현재 위치의 상단 폴더
+                         ../../  : 두단계 상위 디렉토리 출처: https://88240.tistory.com/122 [shaking blog]-->
+    <!--div.container>div.row*2>div.col-md-3*4>img[src="../../resources/image/loona/loona.jgp"]-->
     <div class="container">
       <div class="row">
         <div class="col-md-3  col-sm-6">
-          <img class="img-responsive"  src="../resources/image/1HeeJin.jpg" alt="Loona_Heejin">
+          <img class="img-responsive"  src="../../resources/image/loona/1HeeJin.jpg" alt="Loona_Heejin">
         </div>
         <div class="col-md-3 col-sm-6">
-          <img class="img-responsive"  src="../resources/image/2HyunJin.jpg" alt="Loona_HyunJin">
+          <img class="img-responsive"  src="../../resources/image/loona/2HyunJin.jpg" alt="Loona_HyunJin">
         </div>
         <div class="col-md-3 col-sm-6">
-          <img class="img-responsive"  src="../resources/image/3HaSeul.jpg" alt="Loona_HaSeul">
+          <img class="img-responsive"  src="../../resources/image/loona/3HaSeul.jpg" alt="Loona_HaSeul">
         </div>
         <div class="col-md-3 col-sm-6">
-          <img class="img-responsive"  src="../resources/image/4YeoJin.jpg" alt="Loona_YeoJin">
+          <img class="img-responsive"  src="../../resources/image/loona/4YeoJin.jpg" alt="Loona_YeoJin">
         </div>
       </div>
       <div class="row">
@@ -74,14 +76,14 @@
     <div class="container-fluid">
       <div class="row">
         둥근 모서리
-        <img src="../resources/image/1HeeJin.jpg" alt="Loona_Heejin" width="150" height="150" class="img-rounded">
+        <img src="../../resources/image/loona/1HeeJin.jpg" alt="Loona_Heejin" width="150" height="150" class="img-rounded">
         원형
-        <img src="../resources/image/1HeeJin.jpg" alt="Loona_Heejin" class="img-circle">
+        <img src="../../resources/image/loona/1HeeJin.jpg" alt="Loona_Heejin" class="img-circle">
         썸네일
-        <img src="../resources/image/1HeeJin.jpg" alt="Loona_Heejin" class="img-thrumbnail">
+        <img src="../../resources/image/loona/1HeeJin.jpg" alt="Loona_Heejin" class="img-thrumbnail">
         반응형 이미지 (img-responsive를 사용한 이미지를 가운데 두기 위해서 .text-center 대신
         .center-block를 사용하면 됩니다.)
-        <img src="../resources/image/1HeeJin.jpg" alt="Loona_Heejin" class="img-responsive">
+        <img src="../../resources/image/loona/1HeeJin.jpg" alt="Loona_Heejin" class="img-responsive">
       </div>
     </div>
     -->
