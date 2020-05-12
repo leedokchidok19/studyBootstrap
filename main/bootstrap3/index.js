@@ -19,17 +19,12 @@ $(function(){
       if(htmlNumber<10) htmlNumber = "0" + htmlNumber;
       let childTag = `<tr>
                         <th scope="row">${i+1}</th>
-                        <td><a class="text-decoration-none" href="./main/bootstrap/ex${htmlNumber}.html" target="_blank">${e}</a></td>
+                        <td><a class="text-decoration-none" href="ex${htmlNumber}.html" target="_blank">${e}</a></td>
                       </tr>`;
       $('#studyList').append(childTag);
-      //template 목록 호출
-      templateList();
+
     });//forEach end
 
   })();// IIFE
 
 });//function end
-
-function templateList(){
-  //template 목록 구현 예정
-}
